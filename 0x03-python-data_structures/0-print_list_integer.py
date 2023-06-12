@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-def print_list_integer(list_int):
-    for number in list_int:
-        number = str(number)
+def def print_list_integer(my_list=[]):
+    for number in my_list:
         print('{}'.format(number), end = '\n')
