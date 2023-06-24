@@ -8,6 +8,7 @@ int check_cycle(listint_t *list)
 {
 	listint_t *now = list;
 	listint_t *then = list;
+	int res = 0;
 
 	while ((now && then) && then->next)
 	{
@@ -22,9 +23,9 @@ int check_cycle(listint_t *list)
 		}
 		if (now == then)
 		{
+			res = 1;
 			break;
-			return (1);
 		}
 	}
-	return (0);
+	return (res);
 }
