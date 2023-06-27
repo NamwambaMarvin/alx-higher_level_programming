@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
     total = 0
-    for element in my_list:
+    for index in range(x):
         try:
-            if type(element) is int:
-                print("{:d}".format(element), end='')
+            if type(my_list[index]) is int and total < x:
+                print("{:d}".format(my_list[index]), end='')
                 total += 1
-        except TypeError:
+        except (TypeError, ValueError):
             continue
     print()
     return total
