@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" The Square Class
+"""Square Class
 
 The class defines dimesions of a square
 
@@ -17,7 +17,7 @@ class Square:
         Raises:
             TypeError: If `size` is not `int`
 
-            ValueError: If `size` is less than 0
+            ValueError: If `size` is less than `0`
 
         """
         if type(size) is not int:
@@ -32,4 +32,4 @@ class Square:
         Returns the area of the square
 
         """
-        return self.__size ** 2
+        return self.__size**2
