@@ -7,6 +7,11 @@ This is the square module
 
 
 class Square:
+    """Square class
+
+    All about the square class
+
+    """
     def __init__(self, size=0):
         """__init__
         Instatiates the square class
