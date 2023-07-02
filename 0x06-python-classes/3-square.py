@@ -1,12 +1,17 @@
 #!/usr/bin/python3
 """Square Class
 
-The class defines dimesions of a square
+The class defines dimesions of a square Class
 
 """
 
 
 class Square:
+    """Square Class
+
+    The square class
+
+    """
     def __init__(self, size=0):
         """__init__
 
