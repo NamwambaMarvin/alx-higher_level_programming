@@ -4,6 +4,8 @@
 This class is just a declaration
 
 """
+
+
 class Square:
     """This is a square class.
 
