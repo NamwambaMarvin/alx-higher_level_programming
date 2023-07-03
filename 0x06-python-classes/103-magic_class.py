@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-import dis
-import math
-
 """Magic Class module
 
 For comuting byte code
 
 """
+import math
+import dis
 
 
 class MagicClass:
