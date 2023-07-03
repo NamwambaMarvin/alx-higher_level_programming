@@ -2,6 +2,8 @@
 """Square class
 Module square
 """
+
+
 class Square:
     """Square Class
 
