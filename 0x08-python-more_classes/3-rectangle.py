@@ -76,7 +76,7 @@ class Rectangle:
 
         """
         w = self.__width
-        w = self.__height
+        h = self.__height
         rectangle = ''
         if w == 0 or h == 0:
             return rectangle
