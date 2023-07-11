@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 """
-Custom list module
+Checks instances of objects
 """
 
 
-class MyList(list):
+def is_same_class(obj, a_class):
     """
-    MyList Class extends list class in the py lib
+    Checks instances of objects
     """
-    def __init__(self, iterable):
-        super().__init__(int(item) for item in iterable)
-
-    """
-    print sorted - Prints a list i sorted order
-    """
-    def print_sorted(self):
-        print(super().sort(item))
+    if isinstance(obj, a_class):
+        return True
+    else:
+        return False
