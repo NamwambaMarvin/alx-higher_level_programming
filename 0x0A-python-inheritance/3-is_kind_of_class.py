@@ -8,7 +8,7 @@ def is_kind_of_class(obj, a_class):
     """
     Function that checks for inheritance
     """
-    if issubclass(obj, a_class):
+    if isinstance(obj, a_class):
         return True
     else:
         return False
