@@ -4,9 +4,10 @@ Module that counts number of lines
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """
-    Functnio to count the numver of lines
+    Writes text to a file
     """
     with open(filename, encoding='utf-8') as f:
-        return len(f.readlines())
+        f.write(text)
+        f.close()
