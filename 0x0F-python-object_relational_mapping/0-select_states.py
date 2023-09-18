@@ -19,7 +19,7 @@ if __name__ == '__main__':
             db=argv[3]
             )
     cur = db.cursor()
-    cur.excecute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states")
     rows = cur.fetchall()
 
     for row in rows:
