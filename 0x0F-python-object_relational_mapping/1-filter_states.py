@@ -22,7 +22,7 @@ if __name__ == '__main__':
     cur.execute(
             "SELECT * FROM states \
             WHERE name LIKE BINARY 'N%' \
-            ORDERBY states.id ASC"
+            ORDER BY states.id ASC"
             )
     rows = cur.fetchall()
 
