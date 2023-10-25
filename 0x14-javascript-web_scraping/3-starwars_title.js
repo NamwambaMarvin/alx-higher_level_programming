@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
 const request = require('request');
+const starWarsUri = 'https://swapi-api.alx-tools.com/api/films/'.concat(process.argv[2]);
 
-const url = 'https://swapi-api.alx-tools.com/api/films/:id'.concat(process.argv[2]);
-
-request(url, function(_err, _err, body){
-	body = JSON.parse(body);
-	console.log(body.title);
+request(starWarsUri, function (_err, _res, body) {
+  body = JSON.parse(body);
+  console.log(body.title);
 });
